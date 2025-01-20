@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(assets/images/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1500px, 100vw);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.main .Box {
+  /* <!-- While changing the Box to box it shows a hover effect on nav on the website  maybe beacuse of another dropdown-box class. So I have to change this class name from box to Box. --> */
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.44;
+  top: 0;
+  position: absolute;
+  
+}
+
+nav {
+  display: flex;
+  max-width: 76vw;
+  justify-content: space-between;
+  padding: 18px;
+  margin: auto;
+  align-items: center;
+  height: 62px;
+}
+
+nav img {
+  width: 148px;
+  position: relative;
+  z-index: 1;
+}
+nav button {
+  position: relative;
+  height: 30px;
+  z-index: 1;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  flex-direction: column;
+  height:100%;
+  z-index: 1;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+
+}
+.bolder {
+  font-weight: 900;
+  font-size: 45px;
+  margin: 1px;
+}
+
+.medium {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1px;
+}
+.small {
+  font-size: 1.2rem;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.separation {
+  background-color: grey;
+  height: 7px;
+  opacity: 50%;
+}
+
+.bar-btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  border-color: red;
+  border-radius: 3px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.btn-transparent {
+  display: flex;
+  background-color: rgba(26, 26, 26, 0.664);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.445);
+  border-radius: 4px;
+  cursor: pointer;
+  height: 32px;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 3px;
+  width: 100px;
+  justify-content: space-between;
+
+}
+
+.btn-red-sm {
+  /* background-color: red; */
+  padding: 3px;
+  font-weight: 900;
+  cursor: pointer;
+  height: 30px;
+  width: 70px;
+}
+
+.btn-red {
+  height: 65px;
+  width: 230px;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.input {
+  height: 40px;
+  width: 350px;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(39, 39, 39, 0.712);
+  border: 1px solid rgba(255, 255, 255, 0.856);
+  color: white;
+  /* border-color: ; */
+  /* border-style: solid 1px ; */
+  /* font-size: 17px; */
+  margin: 10px;
+  
+}
+
+.input_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  /* padding: 10px; */
+  max-width: 90vw;
+  color: white;
+  /* font: 30px bold normal; */
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.sec-image img {
+  max-width: 412px;
+  position: relative;
+}
+
+.title {
+  font: 300 50px "Martel Sans", sans-serif;
+  /* font-size: 50px;
+  font-weight: 100;
+  font-family:"Martel Sans", sans-serif; */
+  display: block;
+}
+
+.sec-image {
+  position: relative;
+  z-index: 1;
+}
+
+/* .vid-tv{
+  position:absolute; 
+  top: 89px;
+  right:32px;
+} */
+
+.sec-image video {
+  position: absolute;
+  top: 64px;
+  right: 57px;
+  height: 169px;
+  z-index: -1;
+}
+
+/* .vid-tv video{
+  position: absolute;
+  top: 89px;
+  right:32px;
+} */
+
+.faq {
+  text-align: center;
+  padding: 70px;
+}
+.fq {
+  display: flex;
+  padding: 70px;
+  font: normal 900 45px "Martel Sans", sans-serif;
+  color: white;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-box {
+  display: flex;
+  background-color: rgb(73, 73, 73);
+  justify-content: space-between;
+  color: white;
+  padding: 24px;
+  max-width: 69vw;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown-box:hover {
+  background-color: rgb(46, 46, 46);
+}
+
+footer {
+  color: white;
+}
+
+.call {
+  margin:0px 174px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.651);
+  font-weight: 500;
+}
+
+.call span{
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.651);
+  font-weight: 500;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  max-width: 75vw;
+  margin: auto;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item button{
+  max-width: 100px;
+  margin-top: 15px;
+}
+
+.footer-item span{
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+footer a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.651);
+  font-weight: 500;
+  margin: 3px;
+}
+
+.bottom-input{
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width :741px) {
+  
+  /* .sec-image img {
+    width: 300px;
+    
+  } */
+  /* .sec-image video {
+    overflow: hidden;
+    height: 169px;
+  } */
+
+  .footer-section {
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bolder {
+    
+    font-size: 32px;
+    
+  }
+  
+  .medium {
+    font-size: 18px;
+    
+  }
+  .small {
+    font-size: 18px;
+    
+  }
+  .input_box {
+    display: block;
+  }
+  nav img{
+    width: 85px;
+  }
+  .input{
+    width: 296px;
+  }
+  .fq{
+    font-size: 2rem;
+  }
+  .footer-item  {
+    align-items: center;
+  }
+  .section-1{
+    flex-wrap: wrap;
+  }
+
+}
